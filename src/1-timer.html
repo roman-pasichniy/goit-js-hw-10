@@ -2,12 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./img/javascript.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Timer</title>
+    <link rel="stylesheet" href="./css/1-timer.css" />
+    <title>Document</title>
   </head>
+
   <body>
-    <p><a href="./index.html">Go back</a></p>
+    <p style="margin-bottom: 16px"><a href="./index.html">Go back</a></p>
     <input type="text" id="datetime-picker" /><button
       type="button"
       disabled
@@ -15,6 +17,7 @@
     >
       Start
     </button>
+    <button type="button" data-fastForward>x10</button>
     <div class="timer">
       <div class="field">
         <span class="value" data-days>00</span>
