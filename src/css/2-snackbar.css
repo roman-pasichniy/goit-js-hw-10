@@ -76,7 +76,7 @@ input[type='radio'] {
   height: 20px;
 }
 
-button {
+.btnSnackbar {
   border: none;
   border-radius: 8px;
   width: 100%;

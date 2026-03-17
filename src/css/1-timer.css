@@ -53,13 +53,6 @@ button {
   min-width: 75px;
 }
 
-#datetime-picker + button + button {
-  min-width: 40px;
-  color: transparent;
-  background-color: transparent;
-  pointer-events: none;
-}
-
 button:hover {
   background-color: #6c8cff;
 }
