@@ -56,7 +56,7 @@ function startTimer() {
 }
 function renderTime(time) {
   const interval = time - Date.now();
-  if (interval <= 0) {
+  if (interval < 0) {
     clearInterval(intervalID);
     calendar.input.disabled = false;
     timer.style.cssText = '';
