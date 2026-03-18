@@ -53,13 +53,11 @@ function startTimer() {
   renderTime(userSelectedDate);
 
   intervalID = setInterval(renderTime, sec, userSelectedDate);
-  setTimeout(surprise, 3000);
 }
 function renderTime(time) {
   const interval = time - Date.now();
   if (interval <= 0) {
     clearInterval(intervalID);
-    buttonStart.disabled = false;
     calendar.input.disabled = false;
     timer.style.cssText = '';
     return;
@@ -77,11 +75,6 @@ function addLeadingZero(value) {
 }
 
 clearInterval(intervalID);
-intervalID = setInterval(
-  renderTimeFaster,
-  Math.round(sec / 10),
-  userSelectedDate
-);
 
 function convertMs(ms) {
   // Number of milliseconds per unit of time
